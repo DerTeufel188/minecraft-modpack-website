@@ -3,74 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Minecraft Modpack</title>
+    <title>FireCraft - Dein Minecraft Abenteuer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
         }
 
         header {
-            background-image: url('https://example.com/dein-banner-bild.jpg');
-            background-size: cover;
-            color: white;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1592496001020-84dbb4d9e2f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
             text-align: center;
-            padding: 100px 0;
+            padding: 120px 20px;
         }
 
         header h1 {
-            font-size: 50px;
+            font-size: 60px;
             margin: 0;
+            color: #ff4500;
+            animation: glow 1.5s infinite alternate;
         }
 
-        .content {
-            padding: 30px;
+        header p {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff4500; }
+            to { text-shadow: 0 0 20px #ff4500, 0 0 30px #ff6347; }
+        }
+
+        .section {
+            padding: 50px 20px;
             text-align: center;
         }
 
         .button {
-            background-color: #4CAF50;
+            background-color: #ff4500;
             color: white;
-            padding: 15px 32px;
-            text-align: center;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 20px;
             border: none;
-            cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background 0.3s;
         }
 
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 50px;
+        .button:hover {
+            background-color: #e03e00;
         }
 
-        .feature {
-            width: 30%;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        .rules, .server-info {
+            max-width: 900px;
+            margin: 30px auto;
+            text-align: left;
+            background-color: #2a2a2a;
+            padding: 30px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .rules h2, .server-info h2 {
+            color: #ff6347;
+            margin-bottom: 20px;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #111;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            font-size: 14px;
         }
 
         footer a {
-            color: white;
+            color: #ff4500;
             text-decoration: none;
             margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
     </style>
@@ -78,33 +95,42 @@
 <body>
 
 <header>
-    <h1>Willkommen zu meinem Minecraft Modpack</h1>
-    <p>Lade das Modpack herunter und starte dein Abenteuer!</p>
+    <h1>FireCraft</h1>
+    <p>Dein neues episches Minecraft Abenteuer wartet!</p>
 </header>
 
-<div class="content">
-    <h2>Modpack herunterladen</h2>
-    <p>Erlebe Minecraft in einer neuen Dimension mit meinem einzigartigen Modpack. Klicke unten, um es herunterzuladen!</p>
+<section class="section">
+    <h2>Starte dein Abenteuer</h2>
+    <p>Hier kannst du unser offizielles FireCraft Modpack herunterladen und direkt loslegen!</p>
     <a href="https://drive.google.com/file/d/1hhSuYD8IAolv2_e-0qr-xkhryyvkMxLa/view?usp=sharing" class="button" download>Modpack herunterladen</a>
-</div>
+</section>
 
-<div class="features">
-    <div class="feature">
-        <h3>Neue Biome</h3>
-        <p>Entdecke neue und aufregende Biome in deiner Minecraft-Welt.</p>
-    </div>
-    <div class="feature">
-        <h3>Verbesserte Grafik</h3>
-        <p>Genieße atemberaubende Grafiken mit Mods, die die visuelle Qualität verbessern.</p>
-    </div>
-    <div class="feature">
-        <h3>Mehr Mods</h3>
-        <p>Das Modpack enthält viele neue Mods für mehr Abwechslung und Spaß.</p>
-    </div>
-</div>
+<section class="section rules">
+    <h2>Regeln</h2>
+    <ul>
+        <li>Kein Griefing oder Stehlen</li>
+        <li>Respektiere andere Spieler</li>
+        <li>Keine Cheats oder Hacks</li>
+        <li>Baue nicht in fremden Gebieten ohne Erlaubnis</li>
+        <li>Viel Spaß und unterstütze die Community!</li>
+    </ul>
+</section>
+
+<section class="section server-info">
+    <h2>Server-Info</h2>
+    <p><strong>Server IP:</strong> <em>firecraft.minecraftserver.com</em></p>
+    <p><strong>Version:</strong> Minecraft 1.20.1 Forge</p>
+    <p><strong>Benötigte Mods:</strong> Installiere unser Modpack für die beste Erfahrung.</p>
+</section>
+
+<section class="section">
+    <h2>Kontakt</h2>
+    <p>Fragen oder Probleme? Schreibe uns auf Discord!</p>
+    <a href="https://discord.gg/4NepfqngK6" class="button">Discord beitreten</a>
+</section>
 
 <footer>
-    <p>&copy; 2025 Dein Minecraft Modpack | <a href="#">Kontakt</a> | <a href="#">Impressum</a></p>
+    <p>&copy; 2025 FireCraft Server | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
 </footer>
 
 </body>
